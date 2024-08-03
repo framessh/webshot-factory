@@ -101,7 +101,6 @@ export class ShotWorker {
         let options: any = {
             ignoreHTTPSErrors: true,
             headless: true,
-            dumpio: true,
             args: [
                     '--ignore-certificate-errors',
                     '--enable-precise-memory-info',
