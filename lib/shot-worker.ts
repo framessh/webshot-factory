@@ -103,6 +103,7 @@ export class ShotWorker {
             headless: true,
             dumpio: true,
             args: [
+                    '-no-sandbox',
                     '--ignore-certificate-errors',
                     '--enable-precise-memory-info',
                     `--remote-debugging-port=${this.debugPort}`,
