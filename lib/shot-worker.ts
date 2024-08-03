@@ -102,9 +102,12 @@ export class ShotWorker {
             ignoreHTTPSErrors: true,
             headless: true,
             args: [
-                '--ignore-certificate-errors',
-                '--enable-precise-memory-info',
-                `--remote-debugging-port=${this.debugPort}`],
+                    '--ignore-certificate-errors',
+                    '--disable-gpu',
+                    '--enable-precise-memory-info',
+                    `--remote-debugging-port=${this.debugPort}`,
+                    `--window-size=${width},${height}`
+            ],
             userDataDir: '/tmp/chrome'
         };
         if (chromeExecutablePath) {
