@@ -104,7 +104,6 @@ export class ShotWorker {
             dumpio: true,
             args: [
                     '--ignore-certificate-errors',
-                    '--disable-gpu',
                     '--enable-precise-memory-info',
                     `--remote-debugging-port=${this.debugPort}`,
                     `--window-size=${width},${height}`
